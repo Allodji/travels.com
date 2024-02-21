@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Debut de  la barre de navigation */
+
+nav{
+   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+   
+
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+   
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(12, 165, 106, 0.474);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.162);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1000;
+
+}
+
+.sidebar li {
+    width: 100%;
+
+}
+
+.sidebar a {
+    width: 100%;
+    
+}
+
+.sidebar{
+    width: 80%;
+}
+
+   .openBtn{
+    display: block;
+}
+    
+ul li a i {
+    padding-right: 10px;
+}
+
+/* FIn de la premier partie  la barre de navigation */
+
+
+/* Debut de la seconde partie de la barre de navigation*/
+   
+
+  form input[type="text"]{
+            background-color: rgba(0, 128, 0, 0.274);
+            border-radius: 5px;
+            height:40px;
+            padding: 2px;
+            margin-right: 0px;
+            
+
+  }
+  form input[type="text"]:focus{
+          outline: none;
+          border: 2px solid rgba(0, 255, 60, 0.467);
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 255, 81, 0.551);
+          
+
+  }
+  form input[type="submit"]{
+            margin-left: 0px !important;
+            height:40px;
+
+  }
+
+  
+/* Fin de la seconde partie de la barre de navigation*/
+
+
+
+
+/* Debut Section de proche de votre emplacement */
+  section.hotel{
+        border: 1px solid rgba(0, 0, 0, 0.586);
+        justify-content: space-around;
+        max-width: auto;
+        margin: 20px auto;
+        z-index: 0;
+        text-align: center;
+
+  }
+  section.hotel div{
+       
+        justify-content: space-around;
+        max-width: auto;
+        margin: 20px auto;
+        z-index: 0;
+        text-align: center;
+
+  }
+
+/*Fin  Section de proche de votre emplacement */
+
+/* Debut de la section hotel*/
+    a.btn{
+        margin: 10px;
+    } 
+
+/* Fin de la section hotel*/
+
+/*########################################
+########################################*/
+
+/* Debut de  la barre de navigation pour media query */
+
+@media (max-width:800px) {
+    .sidebar{
+        width: 80%;
+
+    }
+
+    .mobile{
+        display: none;
+    }
+    .openBtn{
+        display: block;
+    }
+
+
+   
+/* Debut Section de proche de votre emplacement */
+ 
+
+/*Fin  Section de proche de votre emplacement */
+
+}
+
+@media (max-width:600) {
+    .sidebar{
+        width: 80%;
+
+    }
+
+    .mobile{
+        display: none;
+    }
+    .openBtn{
+        display: block;
+    }
+
+
+   
+/* Debut Section de proche de votre emplacement */
+ 
+  section.hotel div{
+                    background-color: red;
+
+  }
+
+/*Fin  Section de proche de votre emplacement */
+
+}
+
+@media (min-width:1000px) {
+   
+    .sidebar{
+        width: 30%;
+}
+}
+
+/* Fin de  la barre de navigation pour media query */
